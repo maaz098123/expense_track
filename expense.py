@@ -43,9 +43,9 @@ def update_expenses(expense_id,description=None,amount=None) :
     for e in expenses:
         if e["id"] == expense_id:
             if description:
-              e["description"] == description
+              e["description"] = description
             if amount:
-                e["amount"] == amount
+                e["amount"] = amount
                 print("Amount must be positive")
                 return
             e["amount"] = amount
